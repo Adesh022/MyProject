@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(45deg, rgb(4, 0, 56), #008b8b, #000080);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.todo-container {
+  background: #17174e;
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 8px 8px 8px rgba(7, 0, 27, 0.753), -8px -8px 8px rgba(0, 74, 83, 0.753);
+}
+
+h2 {
+  color: aqua;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  gap: 8px;
+}
+
+input {
+  background: #daf0ff;
+  font-size: medium;
+  font-weight: 400;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+}
+
+input::placeholder {
+  color: #012ffd;
+  word-spacing: 2px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background: #02fc3c;
+  color: #1101fa;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #02e232;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background: #f1f1f1;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.done {
+  text-decoration: underline;
+  background: #d4edda;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 5px 8px;
+}
